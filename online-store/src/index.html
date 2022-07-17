@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Store</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__logo logo">
+        <a class="header__text" href="#">Makeup Store</a>
+      </h1>
+      <div class="header__search-container search">
+        <form class="search__form" action="#" id="search">
+          <input class="search__input" type="search" name="search" autofocus
+                 autocomplete="disabled" placeholder="Search">
+        </form>
+        <button class="search__button" type="submit" form="search"></button>
+      </div>
+      <a class="header__cart-container mini-cart" href="#">
+        <span class="mini-cart__counter">0</span>
+      </a>
+    </header>
+    <main class="main">
+      <aside class="filter">
+        <h2 class="filter__title">filters</h2>
+        <form action="#" class="filter__form" id="filters">
+          <div class="filter__order filter-order filter-item">
+            <h3 class="filter-order__subtitle filter-subtitle">Sort by:
+            </h3>
+            <ul class="filter-order__list">
+              <li class="filter-order__item">
+                <a class="filter-order__name-link filter-link" href="#">Name</a>
+              </li>
+              <li class="filter-order__item">
+                <a class="filter-order__date-link filter-link" href="#">Release
+                  date</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__price-range filter-range filter-item">
+            <h3 class="filter-range__subtitle filter-subtitle">Price:</h3>
+            <ul class="filter-range__input-list">
+              <li class="filter-range__input-item">
+                <label class="filter-range__label" for="price-from">from</label>
+                <input class="filter-range__input" type="text" id="price-from">
+              </li>
+              <li class="filter-range__input-item">
+                <label class="filter-range__label" for="price-to">to</label>
+                <input class="filter-range__input" type="text" id="price-to">
+              </li>
+            </ul>
+            <div class="filter-range__slider-track-wrapper">
+              <div class="filter-range__slider-track" id="price-slider-track">
+              </div>
+              <input class="filter-range__track-from" type="range" min="0"
+                     max="100" value="0" id="price-slider-from">
+              <input class="filter-range__track-to" type="range" min="0"
+                     max="100" value="100" id="price-slider-to">
+            </div>
+          </div>
+          <div class="filter__rating-range filter-range filter-item">
+            <h3 class="filter-range__subtitle filter-subtitle">Rating:</h3>
+            <ul class="filter-range__input-list">
+              <li class="filter-range__input-item">
+                <label class="filter-range__label" for="price-from">from</label>
+                <input class="filter-range__input" type="text" id="rating-from">
+              </li>
+              <li class="filter-range__input-item">
+                <label class="filter-range__label" for="price-to">to</label>
+                <input class="filter-range__input" type="text" id="rating-to">
+              </li>
+            </ul>
+            <div class="filter-range__slider-track-wrapper">
+              <div class="filter-range__slider-track" id="rating-slider-track">
+              </div>
+              <input class="filter-range__track-from" type="range" min="0"
+                     max="5" value="0" id="rating-slider-from">
+              <input class="filter-range__track-to" type="range" min="0" max="5"
+                     value="5" id="rating-slider-to">
+            </div>
+          </div>
+          <div class="filter__brands-sort filter-sort filter-item"></div>
+          <div class="filter__categories-sort filter-sort filter-item"></div>
+          <div class="filter__types-sort filter-sort filter-item"></div>
+        </form>
+        <button class="filter__reset-btn btn">Reset</button>
+        <button class="filter__clear-btn btn">Clear</button>
+      </aside>
+      <section class="cards"></section>
+    </main>
+    <footer class="footer">
+      <p class="footer__year">2022</p>
+      <p class="footer__github-link-wrapper">
+        <a class="footer__github-link"
+           href="https://github.com/alexborisewich">github</a>
+      </p>
+      <p class="footer__rsschool-link-wrapper">
+        <a class="footer__rsschool-link" href="https://rs.school/js/">
+          <img class="footer__rsschool-img"
+               src="https://rs.school/images/rs_school_js.svg" alt="RSSchool">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
